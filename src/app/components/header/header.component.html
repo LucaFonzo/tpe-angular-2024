@@ -1,0 +1,42 @@
+<header class="header">
+  <div class="navigation container">
+    <div>
+      <h1>{{title}}</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+        <li (click)="showCart()"><svg class="icon icon-cart"></svg></li>
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="cart">
+  <div class="cart-container">
+    <table>
+      <thead>
+        <td></td>
+        <td></td>
+      </thead>
+      <tbody>
+        @if(cart.length == 0){
+          <tr>
+            <td>
+              <span>No hay items en el carrito</span>
+            </td>
+          </tr>
+        }@else {
+          @for(product of cart; track product.id){
+          <tr>
+            <td class="cart-product-image"><img src="../../../assets/img/default-featured-image.png.jpg" alt=""></td>
+            <td class="info-cart"><span>{{product.name}}</span><span>{{product.price}}</span></td>
+            <td><button class="btn btn-danger" (click)="removeFromCart(product)">Quitar del carrito</button>
+            </td>
+          </tr>
+          }
+        }
+      </tbody>
+    </table>
+  </div>
+</div>
