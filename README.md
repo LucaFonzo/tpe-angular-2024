@@ -31,7 +31,7 @@ Luca Fonzo 45224584 lucafonzo3110@gmail.com Tandil
 ## Tema
 Para este proyecto se eligio la tematica de un e-commerce en la que se pueden agregar productos a un carrito y se puede navegar entre
 dos paginas home y about.  
-Ruteo: Para el punto de ruteo se enruto en el header dos paginas home y about
+Ruteo: Para el punto de ruteo se enruto en el header dos paginas home y about  
 Componentes: Para este punto se creo en la pagina home un componente que lleva la estrucutura del listado de productos y el componente del header  
 Interfaces: Para el uso de una interfaz se creo la de Producto.  
 Directivas o Control de Flujo:Para las directivas se utilizo un @for para mostrar el listado de productos que contiene un array en el componente y para @if dentro del mismo @for para productos se agrego que si uno de los productos no tuviera una imagen se agregue una por defecto  
