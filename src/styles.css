@@ -12,3 +12,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .icon-cart {
   background-image: url('./assets/icons/cart-shopping-solid.svg');
 }
+a {
+  text-decoration: none;
+  color: black;
+}
